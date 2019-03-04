@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--form generated for user to be created-->
+</head>
+<body>
+<form action="{% url 'verifieduser' %}" method='POST'>
+{%csrf_token%}
+{{ form.as_p }}
+    <button>Submit</button>
+</form>
+
+</body>
+</html>
